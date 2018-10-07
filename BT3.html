@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = window.prompt("");
+    var Upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var Lower = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+    for (var x = 0; x<str.length; x++){
+        if (Upper.indexOf(str[x]) !== -1){
+            result.push(str[x].toLowerCase());
+        }
+        else if (Lower.indexOf(str[x]) !== -1){
+            result.push(str[x].toUpperCase());
+        }
+        else {
+            result.push(str[x]);
+        }
+    }
+    alert(result.join(''));
+</script>
+</body>
+</html>
